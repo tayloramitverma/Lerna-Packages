@@ -1,0 +1,41 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "test"
+        ]
+      }
+    }
+  },
+  "namedInputs": {
+    "all": [
+      "{projectRoot}/**/*"
+    ],
+    "public": [
+      "!{projectRoot}/**/*.test.*"
+    ]
+  },
+  "targetDefults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "public",
+        "^public"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "build"
+      ],
+      "inputs": [
+        "all",
+        "^public"
+      ]
+    }
+  }
+}

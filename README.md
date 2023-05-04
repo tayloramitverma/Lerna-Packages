@@ -11,6 +11,7 @@ Lerna commands:
 - `npx lerna publish --no-private`
 - `lerna version --no-private` Manage all packages versions
 - `npx nx graph`
+- `npx lerna run build,test` Run build and test commans together
 
 Add required dependencies
 
@@ -41,10 +42,8 @@ Configure tsc configuration file for outDir and declaration
 
 In above code snippet add types, files and scripts for test and create build
 
-
-Finally, 
+Finally,
 
 `npx lerna run build` this commands run in all packages there setup script to generate build.
 
 In scripts of demo-is-odd, added `tsc` for build and `jest` for testing tool. It's working fine because we added dependency in `nx.json` file.
-

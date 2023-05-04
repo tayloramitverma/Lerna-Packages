@@ -2105,13 +2105,13 @@ delegates@^1.0.0:
   integrity sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==
 
 "demo-is-even@file:/home/neosoft/Downloads/Learning/Lerna/Lerna-Packages/packages/demo-is-even":
-  version "0.0.0"
+  version "1.0.0"
   resolved "file:packages/demo-is-even"
   dependencies:
     demo-is-odd "*"
 
-demo-is-odd@*, "demo-is-odd@file:/home/neosoft/Downloads/Learning/Lerna/Lerna-Packages/packages/demo-is-odd":
-  version "0.0.0"
+demo-is-odd@^1.0.0, "demo-is-odd@file:/home/neosoft/Downloads/Learning/Lerna/Lerna-Packages/packages/demo-is-odd":
+  version "1.0.0"
   resolved "file:packages/demo-is-odd"
 
 depd@^2.0.0:

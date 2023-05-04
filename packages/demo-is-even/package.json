@@ -1,6 +1,6 @@
 {
   "name": "demo-is-even",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Amit <amitverma.neosoft@gmail.com>",
   "homepage": "",
@@ -19,7 +19,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "demo-is-odd": "*"
+    "demo-is-odd": "^1.0.0"
   },
   "devDependencies": {
     "jest": "^29.5.0",
